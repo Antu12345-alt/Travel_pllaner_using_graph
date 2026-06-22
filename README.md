@@ -24,7 +24,7 @@ Design and implement a console‑based Travel Planner that:
 - Displays the path and optimal value (min distance/time/cost) to the user.
 
 - HOW TO RUN:g++ main.cpp graph.cpp bfs.cpp dijkstra.cpp -o travelplanner
-then-
+  
 .\travelplanner.exe
 
 3. Data Structures Used
