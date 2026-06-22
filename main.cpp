@@ -8,12 +8,12 @@
 #include "bfs.h"
 using namespace std;
 
-// 🔥 CITY ↔ ID MAPPING
+
 unordered_map<string, int> cityToId;
 unordered_map<int, string> idToCity;
 int idCounter = 0;
 
-// -------- GET OR CREATE CITY ID --------
+// GET OR CREATE CITY ID 
 int getCityId(string city) {
     if(cityToId.find(city) == cityToId.end()) {
         cityToId[city] = idCounter;
@@ -23,7 +23,7 @@ int getCityId(string city) {
     return cityToId[city];
 }
 
-// -------- LOAD CSV FUNCTION --------
+//  LOAD CSV FUNCTION 
 void loadFromCSV(string filename) {
     ifstream file(filename);
     string line;
@@ -57,7 +57,7 @@ void loadFromCSV(string filename) {
     file.close();
 }
 
-// -------- PRINT PATH WITH CITY NAMES --------
+//  PRINT PATH WITH CITY NAMES 
 void printCityPath(int node) {
     if(parent[node] == -1) {
         cout << idToCity[node] << " ";
@@ -67,17 +67,17 @@ void printCityPath(int node) {
     cout << idToCity[node] << " ";
 }
 
-// -------- MAIN --------
+//MAIN 
 int main() {
 
-    // ❌ REMOVE manual n input
+    
     // int n;
     // cout << "Enter number of nodes: ";
     // cin >> n;
 
     loadFromCSV("data.csv");
 
-    int n = idCounter; // ✅ auto count nodes
+    int n = idCounter; 
 
     int ch = 0;
 
