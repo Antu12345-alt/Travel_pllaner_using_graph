@@ -1,6 +1,6 @@
 # Travel_pllaner_using_graph
 DSA based travel planner project using graph algorithems for shortest path in c++
-#OUTPUT SCREENSHOTS
+
 1. Introduction
 
 This Travel Planner project implements a city‑to‑city route‑planning system using graph data structures and Dijkstra’s shortest‑path algorithm. The program reads a CSV file containing city‑pair routes with distance, time, and cost, and constructs an undirected weighted graph. Then, it answers user queries to find the shortest, fastest, or cheapest route between two cities.
@@ -22,6 +22,10 @@ Design and implement a console‑based Travel Planner that:
   - Cheapest cost
 - Supports traffic simulation (adds a penalty to edge weights).
 - Displays the path and optimal value (min distance/time/cost) to the user.
+
+- HOW TO RUN:g++ main.cpp graph.cpp bfs.cpp dijkstra.cpp -o travelplanner
+then-
+.\travelplanner.exe
 
 3. Data Structures Used
 
